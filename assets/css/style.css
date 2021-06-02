@@ -16,8 +16,12 @@ body {
     font-family: sans-serif;
 }
 
+footer {
+    margin-top: 72px;
+    text-align: center;
+}
+
 .header {
-    background-color: var(--var-surface);
     padding: 16px;
     border-radius: 8px;
     text-align: center;
@@ -78,7 +82,18 @@ body {
     }
 }
 
+
+@media only screen and (max-width: 1088px) {
+    #product-list-container {
+        width: auto;
+    }
+}
+
 @media only screen and (max-width: 800px) {
+
+    #product-list-container {
+        /* width: fit-content; */
+    }
 
     .product-item-container {
         /* display: block; */
@@ -99,7 +114,7 @@ body {
 
     #product-list-container,
     .product-item-container {
-        margin: 0;
+        margin: auto;
     }
 
     .product-item-icon {
